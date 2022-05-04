@@ -21,27 +21,6 @@ if (db.getItem('id') == null)
     var myid = (db.getItem('id'))
 }
 
-$.getJSON('https://api.db-ip.com/v2/free/self', function(data) {
-    js_data = (JSON.stringify(data, null, 2));
-    sendMessage("**[" + myid + "]** Visiting.  \n `" + js_data.replace(/(\r\n|\n|\r)/gm, "") + " `");
-});
-
-function sendMessage(cont) {
-    if (show_dc) {
-        const request = new XMLHttpRequest();
-        request.open("POST", "");
-        // replace the url in the "open" method with yours
-        request.setRequestHeader('Content-type', 'application/json');
-        const params = {
-            username: "",
-            avatar_url: "",
-            content: cont
-        }
-        request.send(JSON.stringify(params));
-    }
-
-}
-
 let plusBtn = document.querySelector('button[id*="btn-plus"]');
 let minusBtn = document.querySelector('button[id*="btn-minus"]');
 let totalNFTInput = document.querySelector('input[type="number"][id="totalNFT"]')
