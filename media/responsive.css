@@ -1,0 +1,49 @@
+@media (min-width: 1200px){
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1300px;
+}
+}
+
+@media (max-width: 990px){
+  .head-btn{
+    display: flex;
+  }
+  .header-left{
+    display: none;
+  }
+  .header-right{
+    display: none;
+  }
+}
+
+@media (max-width: 767px){
+  .title {
+    font-size: 35px;
+  }
+  .parah {
+    font-size: 14px;
+}
+.banner-content {
+  padding: 140px 0 60px 0;
+}
+.img-list-holder ul li img{
+  max-width: 150px;
+}
+.img-box{
+  text-align: center;
+}
+.foot-links{
+  margin-bottom: 30px;
+  text-align: center;
+  width: 100%;
+}
+.foot-links h2{
+  margin: 0 auto;
+}
+.foot-links ul{
+  text-align: center;
+  align-items: center;
+}
+}
+
+
